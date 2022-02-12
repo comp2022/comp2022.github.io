@@ -5,6 +5,10 @@ const items = [
     {
         label: "Home",
         link: "/"
+    },
+    {
+        label: "Google",
+        link: "https://www.google.com"
     }
 ]
 
@@ -14,7 +18,7 @@ export default function Nav() {
             {
                 // generate the links
                 items.map(item => {
-                    return <li><a href={process.env.PUBLIC_URL + item.link}>{item.label}</a></li>
+                    return <li><a href={item.link}>{item.label}</a></li>
                 })
             }
         </ul>
