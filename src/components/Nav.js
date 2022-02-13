@@ -1,4 +1,4 @@
-import './Nav.css'; // nav styles
+import styles from './Nav.module.css'; // nav styles
 
 // contains the information for the links
 const items = [
@@ -13,7 +13,7 @@ const items = [
 ]
 
 export default function Nav() {
-    return <nav id="main-nav">
+    return <nav id={styles.main_nav}>
         <ul>
             {
                 // generate the links
