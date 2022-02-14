@@ -10,7 +10,7 @@ import styles from "./Card.module.scss";
 */
 export default function Card({ title, subtitle, items, link, image }) {
     return <div className={styles.card}>
-        <a href={link}>
+        <a href="./images/rocks.png">
             <img src={image} alt={title}/>
         </a>
         <h2>{title}</h2>
