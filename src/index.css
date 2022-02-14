@@ -42,7 +42,6 @@ body {
 .headerTag > span:hover {
   cursor: pointer;
 }
-
 .headerTag > span.active {
   font-weight: bold;
 }
