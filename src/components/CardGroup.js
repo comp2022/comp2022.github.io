@@ -1,8 +1,7 @@
 import Card from "./Card";
 import styles from "./CardGroup.module.scss";
 import FilterProjects from "./FilterProjects";
-import { useState } from "react";
-import { projects } from '../project-data.js';
+import { useEffect, useState } from "react";
 
 /**
  * Displays a group of cards.
@@ -11,18 +10,27 @@ import { projects } from '../project-data.js';
  */
 
 
-export default function CardGroup({ cards, tags }) {
+export default function CardGroup({ cards }) {
+    const [tags, setTags] = useState(null);
+
     const [filterCards, setFilterCards] = useState(cards);
 
     const [activeIndex, setActiveIndex] = useState(0);
 
+    useEffect(() => {
+        let tags = new Set();
+        cards.forEach(cards => cards.tags.forEach(tag => tags.add(tag))); // set allows for only unique elements
+        tags = ["All", ...tags]; // convert to array + add the All option
+        setTags(tags);
+    }, []);  // only use this once
+
     const filterProjects = (i, filterTag) => {
         setActiveIndex(i);
         if (filterTag == 'All') {
-          setFilterCards(projects)
+          setFilterCards(cards)
           return;
         }
-        const filteredProjects = projects.filter((project) => project.tags.includes(filterTag));
+        const filteredProjects = cards.filter((card) => card.tags.includes(filterTag));
         setFilterCards(filteredProjects)
     };
 
@@ -30,7 +38,7 @@ export default function CardGroup({ cards, tags }) {
         <>
         {/* <div className="headerTag"> */}
         <div className={styles.headerTag}>
-            { tags.map((tag, index) => 
+            { tags && tags.map((tag, index) => 
                 <FilterProjects 
                     tag={ tag } 
                     key={ index }

@@ -22,17 +22,13 @@ import CardGroup from './components/CardGroup';
 
 function App() {
 
-  let tags = new Set();
-  projects.forEach(project => project.tags.forEach(tag => tags.add(tag))); // set allows for only unique elements
-  tags = ["All", ...tags]; // convert to array + add the All option
-
   return (
     // shorthand for the React.Fragment
     <>
       <Nav />
       <h1>COMP2022</h1>
       <div id="container">
-        <CardGroup cards={projects} tags={tags} />
+        <CardGroup cards={projects} />
       </div>
     </>
   );
