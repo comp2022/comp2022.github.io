@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import carouselData from './carouselData.json';
+import { data } from './carouselData';
+import Carousel from './components/Carousel';
 
 function App() {
-  console.log(carouselData);
-  return <>hi</>
+  return <>
+    <Carousel data={data} />
+  </>;
 }
 
 ReactDOM.render(
