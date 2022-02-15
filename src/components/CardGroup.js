@@ -10,9 +10,8 @@ import { projects } from '../project-data.js';
  * @prop cards - A list of cards to display in the group.
  */
 
-const tags = ["All", "Misc", "AI", "iOS", "Self Driving", "Computer Vision"];
 
-export default function CardGroup({ cards }) {
+export default function CardGroup({ cards, tags }) {
     const [filterCards, setFilterCards] = useState(cards);
 
     const [activeIndex, setActiveIndex] = useState(0);
