@@ -17,14 +17,36 @@
 .slide {
     position: absolute;
     inset: 0;
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
 }
 
 .slide > img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain; /* container will contain the full image and keep the original aspect ratio*/
+    object-fit: cover; /* container will contain the full image and keep the original aspect ratio*/
     object-position: center; /* image is centred in it's container */
+}
+
+.slide > h1, .slide > h3 {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    color: white;
+    text-align: center;
+}
+
+.slide > h1 {
+    bottom: 20rem;
+}
+
+.slide > h3 {
+    bottom: 13rem;
 }
 
 .carousel > button {
