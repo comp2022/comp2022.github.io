@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
-import { projects } from './project-data.js';
-import Nav from './components/Nav'; // import the nav component
-import CardGroup from './components/CardGroup';
+import App from './components/App';
 
 // const cardss = Array.from({ length: 11 }).map(a => 
 //   ({
@@ -19,20 +16,6 @@ import CardGroup from './components/CardGroup';
 //     image: rocks
 //   })
 // )
-
-function App() {
-
-  return (
-    // shorthand for the React.Fragment
-    <>
-      <Nav />
-      <h1>COMP2022</h1>
-      <div id="container">
-        <CardGroup cards={projects} />
-      </div>
-    </>
-  );
-}
 
 // inject into the page
 ReactDOM.render(
