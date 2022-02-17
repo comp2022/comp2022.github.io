@@ -1,7 +1,7 @@
+import { useEffect, useState } from "react";
 import Card from "./Card";
 import styles from "./CardGroup.module.css";
 import FilterProjects from "./FilterProjects";
-import { useEffect, useState } from "react";
 
 /**
  * Displays a group of cards.
