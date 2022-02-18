@@ -1,5 +1,7 @@
+@use '../styles/colours' as c;
+
 #main_nav {
-    background-color: #1e2125;
+    background-color: c.$nav-background-colour;
     display: block;
     width: 100%;
 }
@@ -15,7 +17,7 @@
 }
 
 #main_nav ul li a {
-    color: #3488e9;
+    color: c.$primary-colour;
     text-decoration: none;
     font-weight: bold;
 }

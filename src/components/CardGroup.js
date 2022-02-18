@@ -1,5 +1,5 @@
 import Card from "./Card";
-import styles from "./CardGroup.module.css";
+import styles from "./CardGroup.module.scss";
 
 /**
  * Displays a group of cards.

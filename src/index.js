@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import Nav from './components/Nav'; // import the nav component
 import rocks from "./images/rocks.png";
 import CardGroup from './components/CardGroup';
