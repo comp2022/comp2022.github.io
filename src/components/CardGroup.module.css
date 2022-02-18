@@ -1,0 +1,25 @@
+.card_group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.headerTag {
+  text-align: center;
+}
+
+.headerTag > span {
+  display: inline-block;
+  font-size: 30px;
+  margin: 10px 25px 0 0;
+  color: #ffe75e;
+}
+
+.headerTag > span:hover {
+  cursor: pointer;
+}
+
+.headerTag > span.active {
+  font-weight: bold;
+}
