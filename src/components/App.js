@@ -1,5 +1,5 @@
 import React from 'react';
-import '../index.css';
+import '../index.scss';
 import { projects } from '../project-data';
 import Nav from './Nav'; // import the nav component
 import CardGroup from './CardGroup';

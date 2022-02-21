@@ -39,7 +39,7 @@ export default function CardGroup({ cards }) {
         {/* <div className="headerTag"> */}
         <div className={styles.headerTag}>
             { tags && tags.map((tag, index) => 
-                <FilterProjects 
+                <FilterProjects
                     tag={ tag } 
                     key={ index }
                     active={ activeIndex === index }
