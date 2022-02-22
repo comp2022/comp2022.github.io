@@ -5,6 +5,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 2.8rem;
 }
 
 .headerTag {
@@ -20,6 +21,8 @@
 
 .headerTag > span:hover {
   cursor: pointer;
+  color: c.$tag-hover-colour;
+  // text-shadow: 1px 1px 50px c.$text-shadow-colour;
 }
 
 .headerTag > span.active {
