@@ -1,3 +1,5 @@
+@use 'styles/colours' as c;
+
 html, body, #root {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@ html, body, #root {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #282c34;
+  background-color: c.$page-background-colour;
 }
 
 body {
@@ -18,7 +20,7 @@ body {
 
 #root h1 {
   margin-top: 50px;
-  color: #3488e9;
+  color: c.$primary-colour;
 }
 
 /* main content container */

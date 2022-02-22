@@ -1,4 +1,4 @@
-import styles from "./CardGroup.module.css";
+import styles from "./CardGroup.module.scss";
 export default function FilterProjects(props) {
     return (
         <span 

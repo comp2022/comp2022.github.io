@@ -1,0 +1,29 @@
+@use "../styles/colours" as c;
+
+.card {
+    max-width: 225px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 25px;
+    background-color: c.$card-background-colour;
+    color: c.$card-content-colour;
+    -webkit-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.35); 
+    box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.35);
+}
+
+.card a img {
+    width: 100%;
+    border-radius: 45px;
+}
+
+.card h2, .card h4 {
+    text-align: center;
+}
+
+.card h2 {
+    color: c.$secondary-colour;
+}
+
+.card h4 {
+    font-weight: normal;
+}
