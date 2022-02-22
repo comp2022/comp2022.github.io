@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
-import styles from "./CardGroup.module.css";
+import styles from "./CardGroup.module.scss";
 import FilterProjects from "./FilterProjects";
 
 /**

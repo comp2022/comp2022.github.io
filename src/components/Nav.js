@@ -1,4 +1,4 @@
-import styles from './Nav.module.css'; // nav styles
+import styles from './Nav.module.scss'; // nav styles
 
 // contains the information for the links
 const items = [
